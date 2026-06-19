@@ -1,8 +1,13 @@
+using EcoSystem.Data.Extensions;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 // Learn more about configuring OpenAPI at https://aka.ms/aspnet/openapi
 builder.Services.AddOpenApi();
+
+// Registrar la conexión a la base de datos de Supabase (PostgreSQL)
+builder.Services.AddEcoSystemData(builder.Configuration);
 
 var app = builder.Build();
 
