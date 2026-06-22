@@ -15,9 +15,21 @@ public static class ServiceCollectionExtensions
     /// </summary>
     public static IServiceCollection AddEcoSystemData(this IServiceCollection services, IConfiguration configuration)
     {
+        var connectionString =
+            configuration.GetConnectionString("DefaultConnection")
+            ?? configuration["ConnectionStrings:DefaultConnection"]
+            ?? Environment.GetEnvironmentVariable("ConnectionStrings__DefaultConnection");
+
+        if (string.IsNullOrWhiteSpace(connectionString) ||
+            connectionString.Contains("CHANGE_ME", StringComparison.OrdinalIgnoreCase))
+        {
+            throw new InvalidOperationException(
+                "Define la cadena de conexión 'DefaultConnection' en appsettings.json o mediante la variable de entorno ConnectionStrings__DefaultConnection.");
+        }
+
         services.AddDbContext<EcoSystemDbContext>(options =>
             options.UseNpgsql(
-                configuration.GetConnectionString("DefaultConnection"),
+                connectionString,
                 npgsqlOptions =>
                 {
                     npgsqlOptions.MigrationsAssembly(typeof(EcoSystemDbContext).Assembly.FullName);

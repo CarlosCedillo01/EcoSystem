@@ -8,9 +8,9 @@
     ".NETCoreApp,Version=v10.0": {
       "EcoSystem.API/1.0.0": {
         "dependencies": {
-          "EcoSystem.Data": "1.0.0",
-          "Microsoft.AspNetCore.OpenApi": "10.0.5",
-          "Microsoft.EntityFrameworkCore.Design": "10.0.9"
+          "EcoSystem.Business": "1.0.0",
+          "Microsoft.EntityFrameworkCore.Design": "10.0.9",
+          "Swashbuckle.AspNetCore": "10.1.5"
         },
         "runtime": {
           "EcoSystem.API.dll": {}
@@ -21,17 +21,6 @@
           "lib/net6.0/Humanizer.dll": {
             "assemblyVersion": "2.14.0.0",
             "fileVersion": "2.14.1.48190"
-          }
-        }
-      },
-      "Microsoft.AspNetCore.OpenApi/10.0.5": {
-        "dependencies": {
-          "Microsoft.OpenApi": "2.0.0"
-        },
-        "runtime": {
-          "lib/net10.0/Microsoft.AspNetCore.OpenApi.dll": {
-            "assemblyVersion": "10.0.5.0",
-            "fileVersion": "10.0.526.15411"
           }
         }
       },
@@ -372,11 +361,11 @@
           }
         }
       },
-      "Microsoft.OpenApi/2.0.0": {
+      "Microsoft.OpenApi/2.4.1": {
         "runtime": {
           "lib/net8.0/Microsoft.OpenApi.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.0.0"
+            "assemblyVersion": "2.4.1.0",
+            "fileVersion": "2.4.1.0"
           }
         }
       },
@@ -425,6 +414,43 @@
           "lib/net10.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
             "assemblyVersion": "10.0.2.0",
             "fileVersion": "10.0.2.0"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore/10.1.5": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "10.1.5",
+          "Swashbuckle.AspNetCore.SwaggerGen": "10.1.5",
+          "Swashbuckle.AspNetCore.SwaggerUI": "10.1.5"
+        }
+      },
+      "Swashbuckle.AspNetCore.Swagger/10.1.5": {
+        "dependencies": {
+          "Microsoft.OpenApi": "2.4.1"
+        },
+        "runtime": {
+          "lib/net10.0/Swashbuckle.AspNetCore.Swagger.dll": {
+            "assemblyVersion": "10.1.5.0",
+            "fileVersion": "10.1.5.2342"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerGen/10.1.5": {
+        "dependencies": {
+          "Swashbuckle.AspNetCore.Swagger": "10.1.5"
+        },
+        "runtime": {
+          "lib/net10.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {
+            "assemblyVersion": "10.1.5.0",
+            "fileVersion": "10.1.5.2342"
+          }
+        }
+      },
+      "Swashbuckle.AspNetCore.SwaggerUI/10.1.5": {
+        "runtime": {
+          "lib/net10.0/Swashbuckle.AspNetCore.SwaggerUI.dll": {
+            "assemblyVersion": "10.1.5.0",
+            "fileVersion": "10.1.5.2342"
           }
         }
       },
@@ -496,6 +522,17 @@
           }
         }
       },
+      "EcoSystem.Business/1.0.0": {
+        "dependencies": {
+          "EcoSystem.Data": "1.0.0"
+        },
+        "runtime": {
+          "EcoSystem.Business.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "EcoSystem.Data/1.0.0": {
         "dependencies": {
           "Microsoft.EntityFrameworkCore": "10.0.9",
@@ -522,13 +559,6 @@
       "sha512": "sha512-lQKvtaTDOXnoVJ20ibTuSIOf2i0uO0MPbDhd1jm238I+U/2ZnRENj0cktKZhtchBMtCUSRQ5v4xBCUbKNmyVMw==",
       "path": "humanizer.core/2.14.1",
       "hashPath": "humanizer.core.2.14.1.nupkg.sha512"
-    },
-    "Microsoft.AspNetCore.OpenApi/10.0.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-vTcxIfOPyfFbYk1g8YcXJfkMnlEWVkSnnjxcZLy60zgwiHMRf2SnZR+9E4HlpwKxgE3yfKMOti8J6WfKuKsw6w==",
-      "path": "microsoft.aspnetcore.openapi/10.0.5",
-      "hashPath": "microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512"
     },
     "Microsoft.Build.Framework/18.0.2": {
       "type": "package",
@@ -607,12 +637,12 @@
       "path": "microsoft.extensions.dependencymodel/10.0.9",
       "hashPath": "microsoft.extensions.dependencymodel.10.0.9.nupkg.sha512"
     },
-    "Microsoft.OpenApi/2.0.0": {
+    "Microsoft.OpenApi/2.4.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-GGYLfzV/G/ct80OZ45JxnWP7NvMX1BCugn/lX7TH5o0lcVaviavsLMTxmFV2AybXWjbi3h6FF1vgZiTK6PXndw==",
-      "path": "microsoft.openapi/2.0.0",
-      "hashPath": "microsoft.openapi.2.0.0.nupkg.sha512"
+      "sha512": "sha512-u7QhXCISMQuab3flasb1hoaiERmUqyWsW7tmQODyILoQ7mJV5IRGM+2KKZYo0QUfC13evEOcHAb6TPWgqEQtrw==",
+      "path": "microsoft.openapi/2.4.1",
+      "hashPath": "microsoft.openapi.2.4.1.nupkg.sha512"
     },
     "Microsoft.VisualStudio.SolutionPersistence/1.0.52": {
       "type": "package",
@@ -648,6 +678,34 @@
       "sha512": "sha512-PsNYgPOSW41Xx19gin7y4EdZAPteWr9Cb01XkdObxOsPzi+mgBupBEN7J7+erXFsROPOILM7MlIoO9QzL8+LGQ==",
       "path": "npgsql.entityframeworkcore.postgresql/10.0.2",
       "hashPath": "npgsql.entityframeworkcore.postgresql.10.0.2.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore/10.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-/eNk9z/8quXhDX14o3XLbwAX/84uIWSbiUD7cI/UrQnoBMOiyAtzKxNEJUtf/TyxjFpcXxE9FAfLvtbNpxHBSg==",
+      "path": "swashbuckle.aspnetcore/10.1.5",
+      "hashPath": "swashbuckle.aspnetcore.10.1.5.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.Swagger/10.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-s4Mct6+Ob0LK9vYVaZcYi/RFFCOEJNjf6nJ5ZPoxtpdFSlzR6i9AHI7Vl44obX8cynRxJW7prA1IUabkiXolFg==",
+      "path": "swashbuckle.aspnetcore.swagger/10.1.5",
+      "hashPath": "swashbuckle.aspnetcore.swagger.10.1.5.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerGen/10.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-ysQIRgqnx4Vb/9+r3xnEAiaxYmiBHO8jTg7ACaCh+R3Sn+ZKCWKD6nyu0ph3okP91wFSh/6LgccjeLUaQHV+ZA==",
+      "path": "swashbuckle.aspnetcore.swaggergen/10.1.5",
+      "hashPath": "swashbuckle.aspnetcore.swaggergen.10.1.5.nupkg.sha512"
+    },
+    "Swashbuckle.AspNetCore.SwaggerUI/10.1.5": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-tQWVKNJWW7lf6S0bv22+7yfxK5IKzvsMeueF4XHSziBfREhLKt42OKzi6/1nINmyGlM4hGbR8aSMg72dLLVBLw==",
+      "path": "swashbuckle.aspnetcore.swaggerui/10.1.5",
+      "hashPath": "swashbuckle.aspnetcore.swaggerui.10.1.5.nupkg.sha512"
     },
     "System.CodeDom/6.0.0": {
       "type": "package",
@@ -697,6 +755,11 @@
       "sha512": "sha512-aRZlojCCGEHDKqh43jaDgaVpYETsgd7Nx4g1zwLKMtv4iTo0627715ajEFNpEEBTgLmvZuv8K0EVxc3sM4NWJA==",
       "path": "system.composition.typedparts/9.0.0",
       "hashPath": "system.composition.typedparts.9.0.0.nupkg.sha512"
+    },
+    "EcoSystem.Business/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "EcoSystem.Data/1.0.0": {
       "type": "project",

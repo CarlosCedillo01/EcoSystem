@@ -10,17 +10,18 @@
         "projectUniqueName": "C:\\Users\\medic\\OneDrive\\Desktop\\EcoSystem\\EcoSystem.Data\\EcoSystem.Data.csproj",
         "projectName": "EcoSystem.Data",
         "projectPath": "C:\\Users\\medic\\OneDrive\\Desktop\\EcoSystem\\EcoSystem.Data\\EcoSystem.Data.csproj",
-        "packagesPath": "C:\\Users\\medic\\.nuget\\packages\\",
+        "packagesPath": "C:\\Users\\CodexSandboxOffline\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\medic\\OneDrive\\Desktop\\EcoSystem\\EcoSystem.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\medic\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\medic\\OneDrive\\Desktop\\EcoSystem\\NuGet.Config",
+          "C:\\Users\\medic\\Documents\\Codex\\2026-06-21\\e\\work\\appdata\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
         ],
         "sources": {
-          "https://api.nuget.org/v3/index.json": {}
+          "C:\\Users\\medic\\Documents\\Codex\\2026-06-21\\e\\work\\offline-feed": {}
         },
         "frameworks": {
           "net10.0": {
